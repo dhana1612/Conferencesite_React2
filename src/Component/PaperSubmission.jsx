@@ -44,46 +44,43 @@ export default function PaperSubmission() {
   };
 
   return (
-    <section className="py-16 bg-gray-100" id="paper-submission">
-      <div className="container mx-auto px-16">
-        <h2 className="text-4xl font-bold text-gray-900 text-center mb-12">Paper Submission</h2>
+    <section className="py-20 bg-gradient-to-br from-blue-50 to-purple-100" id="paper-submission">
+      <div className="container mx-auto px-4 md:px-12">
+        <h2 className="text-5xl font-extrabold text-gray-900 text-center mb-12 tracking-tight">
+          Paper Submission
+        </h2>
 
         <div className="grid md:grid-cols-3 gap-12">
-          {/* Payment Instructions - 30% width */}
-          <div className="md:col-span-1 bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
+          {/* Payment Instructions */}
+          <div className="md:col-span-1 bg-white/90 p-6 rounded-2xl shadow-lg backdrop-blur-lg hover:shadow-xl transition-all duration-300">
             <h3 className="text-2xl font-semibold text-gray-900 mb-4">Payment Instructions</h3>
-            <ul className="space-y-3 text-gray-700 text-xl">
-              <li className="flex items-center space-x-3">
-                <CheckCircle className="w-5 h-5 text-green-600" />
-                <span>Conference Fee: $50 for Students, $100 for Professionals</span>
-              </li>
-              <li className="flex items-center space-x-3">
-                <CheckCircle className="w-5 h-5 text-green-600" />
-                <span>Accepted Payments: Credit Card, PayPal, Bank Transfer</span>
-              </li>
-              <li className="flex items-center space-x-3">
-                <CheckCircle className="w-5 h-5 text-green-600" />
-                <span>Complete payment before submission</span>
-              </li>
-              <li className="flex items-center space-x-3">
-                <CheckCircle className="w-5 h-5 text-green-600" />
-                <span>Upload payment receipt along with paper</span>
-              </li>
+            <ul className="space-y-4 text-gray-700 text-lg">
+              {[
+                "Conference Fee: $50 for Students, $100 for Professionals",
+                "Accepted Payments: Credit Card, PayPal, Bank Transfer",
+                "Complete payment before submission",
+                "Upload payment receipt along with paper",
+              ].map((text, index) => (
+                <li key={index} className="flex items-center space-x-3">
+                  <CheckCircle className="w-6 h-6 text-green-600" />
+                  <span>{text}</span>
+                </li>
+              ))}
             </ul>
           </div>
 
-          {/* Paper Submission Form - 70% width */}
-          <div className="md:col-span-2 bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
-            <h3 className="text-2xl font-semibold text-gray-900 mb-4">Submit Your Paper</h3>
+          {/* Paper Submission Form */}
+          <div className="md:col-span-2 bg-white/90 p-10 rounded-2xl shadow-lg backdrop-blur-lg hover:shadow-xl transition-all duration-300">
+            <h3 className="text-3xl font-semibold text-gray-900 mb-6">Submit Your Paper</h3>
 
             {submitted && (
-              <div className="bg-green-600 text-white text-center py-2 rounded-md mb-4">
+              <div className="bg-green-600 text-white text-center py-2 rounded-lg mb-4 text-lg">
                 ✅ Your paper has been successfully submitted!
               </div>
             )}
 
-            <form onSubmit={handleSubmit} className="space-y-5">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <form onSubmit={handleSubmit} className="space-y-6 text-lg">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <input
                   type="text"
                   name="title"
@@ -91,7 +88,7 @@ export default function PaperSubmission() {
                   value={formData.title}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border rounded-md focus:ring-2 focus:ring-indigo-500 outline-none transition"
+                  className="w-full px-5 py-3 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none transition"
                 />
 
                 <input
@@ -101,11 +98,11 @@ export default function PaperSubmission() {
                   value={formData.authorName}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border rounded-md focus:ring-2 focus:ring-indigo-500 outline-none transition"
+                  className="w-full px-5 py-3 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none transition"
                 />
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <input
                   type="tel"
                   name="phone"
@@ -113,7 +110,7 @@ export default function PaperSubmission() {
                   value={formData.phone}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border rounded-md focus:ring-2 focus:ring-indigo-500 outline-none transition"
+                  className="w-full px-5 py-3 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none transition"
                 />
 
                 <input
@@ -123,7 +120,7 @@ export default function PaperSubmission() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border rounded-md focus:ring-2 focus:ring-indigo-500 outline-none transition"
+                  className="w-full px-5 py-3 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none transition"
                 />
               </div>
 
@@ -134,7 +131,7 @@ export default function PaperSubmission() {
                 value={formData.institution}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 border rounded-md focus:ring-2 focus:ring-indigo-500 outline-none transition"
+                className="w-full px-5 py-3 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none transition"
               />
 
               <select
@@ -142,7 +139,7 @@ export default function PaperSubmission() {
                 value={formData.category}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 border rounded-md focus:ring-2 focus:ring-indigo-500 outline-none transition"
+                className="w-full px-5 py-3 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none transition bg-white"
               >
                 <option value="Academicians">Academicians</option>
                 <option value="Researchers">Researchers</option>
@@ -151,9 +148,9 @@ export default function PaperSubmission() {
               </select>
 
               {/* File Upload */}
-              <div className="border border-dashed border-gray-400 rounded-md p-4 text-center hover:bg-gray-100 transition">
-                <label className="cursor-pointer">
-                  <Upload className="w-8 h-8 mx-auto text-indigo-600" />
+              <div className="border border-dashed border-gray-400 rounded-lg p-6 text-center hover:bg-gray-100 transition">
+                <label className="cursor-pointer flex flex-col items-center">
+                  <Upload className="w-10 h-10 text-indigo-600 mb-2" />
                   <p className="text-gray-600">Click or Drag to Upload Paper</p>
                   <input
                     type="file"
@@ -168,7 +165,7 @@ export default function PaperSubmission() {
 
               <button
                 type="submit"
-                className="w-full bg-indigo-600 text-white font-semibold py-3 rounded-md hover:bg-indigo-500 transition duration-300"
+                className="w-full bg-indigo-600 text-white font-semibold py-4 rounded-lg hover:bg-indigo-500 transition duration-300 text-xl"
               >
                 Submit Paper
               </button>

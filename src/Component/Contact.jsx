@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { MailOpen, PhoneCall, MapPin, Send } from "lucide-react";
+import MapSection from "./MapSection";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -24,8 +25,9 @@ export default function Contact() {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-b from-indigo-100 to-purple-200" id="contact">
-      <div className="container mx-auto px-6 md:px-12 max-w-6xl">
+    <>
+      <section className="py-20 bg-gradient-to-b from-indigo-100 to-purple-200" id="contact">
+      <div className="container mx-auto px-3 md:px-14 max-w-8xl">
         <motion.h2
           className="text-center text-4xl font-extrabold mb-12 text-indigo-900 tracking-wide"
           initial={{ opacity: 0, y: -20 }}
@@ -52,8 +54,8 @@ export default function Contact() {
               <div key={index} className="flex items-center gap-4 p-4 rounded-lg border border-gray-300 hover:bg-gray-100 transition duration-300">
                 <item.icon className="w-8 h-8 text-indigo-600" />
                 <div>
-                  <h4 className="text-lg font-semibold text-indigo-900">{item.title}</h4>
-                  <p className="text-gray-700">{item.info}</p>
+                  <h4 className="text-2xl font-semibold text-indigo-900">{item.title}</h4>
+                  <p className="text-gray-700 text-xl">{item.info}</p>
                 </div>
               </div>
             ))}
@@ -78,7 +80,7 @@ export default function Contact() {
             )}
 
             <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
+              <div className="text-xl">
                 <label className="block text-lg font-medium text-indigo-900">Name</label>
                 <input
                   type="text"
@@ -126,6 +128,9 @@ export default function Contact() {
           </motion.div>
         </div>
       </div>
-    </section>
+      </section>
+
+      <MapSection/>
+    </>
   );
 }

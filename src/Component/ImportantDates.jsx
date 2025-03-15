@@ -30,7 +30,7 @@ export default function ImportantDates() {
         <section className="py-15 pt-20 md:py-25 bg-gradient-to-b from-indigo-50 to-purple-50" id="important-dates">
           <div className="container mx-auto px-4">
             <h2 className="text-center text-3xl md:text-4xl font-bold px-2 md:pe-10 mb-12 text-indigo-900">Important Dates</h2>
-            <div className="max-w-3xl mx-auto px-4 md:px-8">
+            <div className="max-w-3xl mx-auto px-1 md:px-8">
               <div className="relative mb-8 overflow-hidden rounded-xl">
                 <img 
                   src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=1400&q=80" 
