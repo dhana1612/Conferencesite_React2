@@ -23,16 +23,15 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="text-2xl font-extrabold text-white tracking-wide">
-            ICCNDS <span className="text-purple-300">2024</span>
+           <a  href ="#">ICCNDS <span className="text-purple-300">2024</span></a>
           </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-6">
             <a href="#" className="text-2xl font-medium text-white/80 hover:text-white transition duration-300">Home</a>
             <a href="#about" className="text-2xl font-medium text-white/80 hover:text-white transition duration-300">About</a>
-            <a href="#call-for-papers" className="text-2xl font-medium text-white/80 hover:text-white transition duration-300">Call for Papers</a>
-            <a href="#important-dates" className="text-2xl font-medium text-white/80 hover:text-white transition duration-300">Important Dates</a>
             <a href="#speakers" className="text-2xl font-medium text-white/80 hover:text-white transition duration-300">Speakers</a>
+            <a href="#call-for-papers" className="text-2xl font-medium text-white/80 hover:text-white transition duration-300">Author's Desk</a>
             <a href="#contact" className="text-2xl font-medium text-white/80 hover:text-white transition duration-300">Contact</a>
           </div>
 
@@ -53,9 +52,8 @@ export default function Navigation() {
           <div className="flex flex-col items-center mt-16 space-y-6">
             <a href="#" className="text-lg font-medium text-white/90 hover:text-white transition duration-300">Home</a>
             <a href="#about" className="text-lg font-medium text-white/90 hover:text-white transition duration-300" onClick={() => setMenuOpen(false)}>About</a>
-            <a href="#call-for-papers" className="text-lg font-medium text-white/90 hover:text-white transition duration-300" onClick={() => setMenuOpen(false)}>Call for Papers</a>
-            <a href="#important-dates" className="text-lg font-medium text-white/90 hover:text-white transition duration-300" onClick={() => setMenuOpen(false)}>Important Dates</a>
             <a href="#speakers" className="text-lg font-medium text-white/90 hover:text-white transition duration-300" onClick={() => setMenuOpen(false)}>Speakers</a>
+            <a href="#call-for-papers" className="text-lg font-medium text-white/90 hover:text-white transition duration-300" onClick={() => setMenuOpen(false)}>Author's Desk</a>
             <a href="#contact" className="text-lg font-medium text-white/90 hover:text-white transition duration-300" onClick={() => setMenuOpen(false)}>Contact</a>
           </div>
         </div>

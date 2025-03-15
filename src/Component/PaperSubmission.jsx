@@ -44,7 +44,7 @@ export default function PaperSubmission() {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-br from-blue-50 to-purple-100" id="paper-submission">
+    <section className="py-20 bg-[#EDE7F6]" id="paper-submission">
       <div className="container mx-auto px-4 md:px-12">
         <h2 className="text-5xl font-extrabold text-gray-900 text-center mb-12 tracking-tight">
           Paper Submission
@@ -52,9 +52,9 @@ export default function PaperSubmission() {
 
         <div className="grid md:grid-cols-3 gap-12">
           {/* Payment Instructions */}
-          <div className="md:col-span-1 bg-white/90 p-6 rounded-2xl shadow-lg backdrop-blur-lg hover:shadow-xl transition-all duration-300">
-            <h3 className="text-2xl font-semibold text-gray-900 mb-4">Payment Instructions</h3>
-            <ul className="space-y-4 text-gray-700 text-lg">
+          <div className="md:col-span-1 bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+            <h3 className="text-2xl font-semibold text-[#673AB7] mb-4">Payment Instructions</h3>
+            <ul className="space-y-4 text-gray-700 text-xl">
               {[
                 "Conference Fee: $50 for Students, $100 for Professionals",
                 "Accepted Payments: Credit Card, PayPal, Bank Transfer",
@@ -70,8 +70,8 @@ export default function PaperSubmission() {
           </div>
 
           {/* Paper Submission Form */}
-          <div className="md:col-span-2 bg-white/90 p-10 rounded-2xl shadow-lg backdrop-blur-lg hover:shadow-xl transition-all duration-300">
-            <h3 className="text-3xl font-semibold text-gray-900 mb-6">Submit Your Paper</h3>
+          <div className="md:col-span-2 bg-white p-10 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+            <h3 className="text-3xl font-semibold text-[#3F51B5] mb-6">Submit Your Paper</h3>
 
             {submitted && (
               <div className="bg-green-600 text-white text-center py-2 rounded-lg mb-4 text-lg">
@@ -88,7 +88,7 @@ export default function PaperSubmission() {
                   value={formData.title}
                   onChange={handleChange}
                   required
-                  className="w-full px-5 py-3 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none transition"
+                  className="w-full px-5 py-3 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none transition bg-gray-50"
                 />
 
                 <input
@@ -98,7 +98,7 @@ export default function PaperSubmission() {
                   value={formData.authorName}
                   onChange={handleChange}
                   required
-                  className="w-full px-5 py-3 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none transition"
+                  className="w-full px-5 py-3 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none transition bg-gray-50"
                 />
               </div>
 
@@ -110,7 +110,7 @@ export default function PaperSubmission() {
                   value={formData.phone}
                   onChange={handleChange}
                   required
-                  className="w-full px-5 py-3 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none transition"
+                  className="w-full px-5 py-3 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none transition bg-gray-50"
                 />
 
                 <input
@@ -120,7 +120,7 @@ export default function PaperSubmission() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-5 py-3 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none transition"
+                  className="w-full px-5 py-3 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none transition bg-gray-50"
                 />
               </div>
 
@@ -131,7 +131,7 @@ export default function PaperSubmission() {
                 value={formData.institution}
                 onChange={handleChange}
                 required
-                className="w-full px-5 py-3 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none transition"
+                className="w-full px-5 py-3 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none transition bg-gray-50"
               />
 
               <select
