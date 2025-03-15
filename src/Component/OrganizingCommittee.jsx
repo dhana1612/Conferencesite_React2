@@ -29,7 +29,7 @@ const committeeMembers = [
 
 export default function OrganizingCommittee() {
   return (
-    <section className="py-16 bg-gradient-to-b from-indigo-100 to-purple-200" id="committee">
+    <section className="py-16 bg-gradient-to-b from-indigo-100 to-purple-200" id="about">
       <div className="container mx-auto px-4 md:px-8">
         <h2 className="text-center text-3xl md:text-4xl font-bold px-2 md:pe-10 mb-12 text-indigo-900">Organizing Committee</h2>
         

@@ -3,7 +3,7 @@ import { Facebook, Twitter, Linkedin, Mail } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-indigo-900 to-purple-900 text-white py-12 ">
+    <footer className="bg-gradient-to-r from-indigo-900 to-purple-900 text-white py-12 " id="contact">
       <div className="container mx-auto px-16">
         <div className="grid md:grid-cols-4 gap-25">
           {/* Left Section - Conference Info */}

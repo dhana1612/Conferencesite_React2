@@ -44,7 +44,7 @@ export default function PaperSubmission() {
   };
 
   return (
-    <section className="py-20 bg-[#EDE7F6]" id="paper-submission">
+    <section className="py-20 bg-[#EDE7F6]" id="Author's Desk">
       <div className="container mx-auto px-4 md:px-12">
         <h2 className="text-5xl font-extrabold text-gray-900 text-center mb-12 tracking-tight">
           Paper Submission

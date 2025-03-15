@@ -4,6 +4,7 @@ import { Menu, X } from "lucide-react";
 export default function Navigation() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("home"); // Default to "home"
 
   useEffect(() => {
     const handleScroll = () => {
@@ -11,6 +12,29 @@ export default function Navigation() {
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const sections = document.querySelectorAll("section");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        let found = false;
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+            found = true;
+          }
+        });
+
+        // If no section is found in view, keep "home" active
+        if (!found) setActiveSection("home");
+      },
+      { threshold: 0.6 }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => sections.forEach((section) => observer.unobserve(section));
   }, []);
 
   return (
@@ -23,16 +47,22 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="text-2xl font-extrabold text-white tracking-wide">
-           <a  href ="#">ICCNDS <span className="text-purple-300">2024</span></a>
+            <a href="#">ICCNDS <span className="text-purple-300">2024</span></a>
           </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-6">
-            <a href="#" className="text-2xl font-medium text-white/80 hover:text-white transition duration-300">Home</a>
-            <a href="#about" className="text-2xl font-medium text-white/80 hover:text-white transition duration-300">About</a>
-            <a href="#speakers" className="text-2xl font-medium text-white/80 hover:text-white transition duration-300">Speakers</a>
-            <a href="#call-for-papers" className="text-2xl font-medium text-white/80 hover:text-white transition duration-300">Author's Desk</a>
-            <a href="#contact" className="text-2xl font-medium text-white/80 hover:text-white transition duration-300">Contact</a>
+            {["home", "about", "speakers", "Author's Desk", "contact"].map((id) => (
+              <a
+                key={id}
+                href={`#${id}`}
+                className={`text-2xl font-medium transition duration-300 ${
+                  activeSection === id ? "text-yellow-400" : "text-white/80 hover:text-white"
+                }`}
+              >
+                {id.replace("-", " ").replace(/\b\w/g, (l) => l.toUpperCase())}
+              </a>
+            ))}
           </div>
 
           {/* Mobile Menu Button */}
@@ -50,11 +80,18 @@ export default function Navigation() {
           </button>
 
           <div className="flex flex-col items-center mt-16 space-y-6">
-            <a href="#" className="text-lg font-medium text-white/90 hover:text-white transition duration-300">Home</a>
-            <a href="#about" className="text-lg font-medium text-white/90 hover:text-white transition duration-300" onClick={() => setMenuOpen(false)}>About</a>
-            <a href="#speakers" className="text-lg font-medium text-white/90 hover:text-white transition duration-300" onClick={() => setMenuOpen(false)}>Speakers</a>
-            <a href="#call-for-papers" className="text-lg font-medium text-white/90 hover:text-white transition duration-300" onClick={() => setMenuOpen(false)}>Author's Desk</a>
-            <a href="#contact" className="text-lg font-medium text-white/90 hover:text-white transition duration-300" onClick={() => setMenuOpen(false)}>Contact</a>
+            {["home", "about", "speakers", "Author's Desk", "contact"].map((id) => (
+              <a
+                key={id}
+                href={`#${id}`}
+                className={`text-lg font-medium transition duration-300 ${
+                  activeSection === id ? "text-yellow-400" : "text-white/90 hover:text-white"
+                }`}
+                onClick={() => setMenuOpen(false)}
+              >
+                {id.replace("-", " ").replace(/\b\w/g, (l) => l.toUpperCase())}
+              </a>
+            ))}
           </div>
         </div>
       )}

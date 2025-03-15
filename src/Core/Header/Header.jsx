@@ -4,7 +4,7 @@ import { Calendar, MapPin } from "lucide-react";
 export default function Header() {
 
   return (
-    <header className="gradient-animate bg-gradient-to-r from-indigo-900 via-purple-800 to-indigo-900 text-gray-100 py-60 relative overflow-hidden">
+    <header className="gradient-animate bg-gradient-to-r from-indigo-900 via-purple-800 to-indigo-900 text-gray-100 py-60 relative overflow-hidden" >
       {/* Background Overlay */}
       <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1920')] opacity-20 bg-cover bg-center"></div>
       
