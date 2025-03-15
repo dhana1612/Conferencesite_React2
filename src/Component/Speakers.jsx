@@ -55,7 +55,6 @@ export default function Speakers() {
     </section>
 
 
-          <PaperSubmission/>
 
     </>
   )

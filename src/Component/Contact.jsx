@@ -129,8 +129,6 @@ export default function Contact() {
         </div>
       </div>
       </section>
-
-      <MapSection/>
     </>
   );
 }
