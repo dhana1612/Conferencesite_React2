@@ -47,7 +47,7 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="text-2xl font-extrabold text-white tracking-wide">
-            <a href="#">ICCNDS <span className="text-purple-300">2024</span></a>
+            <a href="/">ICCNDS <span className="text-purple-300">2025</span></a>
           </div>
 
           {/* Desktop Menu */}
@@ -55,7 +55,7 @@ export default function Navigation() {
             {["home", "about", "speakers", "Author's Desk", "contact"].map((id) => (
               <a
                 key={id}
-                href={`#${id}`}
+                href={id === "home" ? "/" : `#${id}`} // Redirect home to root path
                 className={`text-2xl font-medium transition duration-300 ${
                   activeSection === id ? "text-yellow-400" : "text-white/80 hover:text-white"
                 }`}
@@ -64,6 +64,7 @@ export default function Navigation() {
               </a>
             ))}
           </div>
+
 
           {/* Mobile Menu Button */}
           <button className="md:hidden text-white focus:outline-none" onClick={() => setMenuOpen(!menuOpen)}>
@@ -83,7 +84,7 @@ export default function Navigation() {
             {["home", "about", "speakers", "Author's Desk", "contact"].map((id) => (
               <a
                 key={id}
-                href={`#${id}`}
+                href={id === "home" ? "/" : `#${id}`}
                 className={`text-lg font-medium transition duration-300 ${
                   activeSection === id ? "text-yellow-400" : "text-white/90 hover:text-white"
                 }`}

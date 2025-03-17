@@ -26,8 +26,8 @@ export default function Contact() {
 
   return (
     <>
-      <section className="py-20 bg-gradient-to-b from-indigo-100 to-purple-200" id="contact">
-      <div className="container mx-auto px-13 md:px-12 max-w-8xl">
+      <section className="py-25 bg-gradient-to-b from-indigo-100 to-purple-200" id="contact">
+      <div className="container mx-auto px-3 md:px-12 max-w-8xl">
         <motion.h2
           className="text-center text-4xl font-extrabold mb-12 text-indigo-900 tracking-wide"
           initial={{ opacity: 0, y: -20 }}
