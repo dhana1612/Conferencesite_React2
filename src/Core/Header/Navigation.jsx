@@ -43,13 +43,13 @@ export default function Navigation() {
       }`}
     >
       <div className="container mx-auto px-6">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-23">
           {/* Logo */}
           <a href="/" className="flex items-center space-x-3">
             <img
-              src="/logo.png" // Change this to your logo's actual path
+              src="src\assets\Logo1.png"
               alt="ICCNDS 2025 Logo"
-              className="h-12 w-auto" // Adjust size as needed
+              className="h-23 w-auto" 
             />
           </a>
 
