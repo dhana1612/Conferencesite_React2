@@ -6,9 +6,10 @@ export default function About() {
     <>
     <section className="py-15 pt-20 bg-gradient-to-b from-indigo-50 to-purple-50 md:py-25" id="about">
       <div className="container mx-auto px-2 ps-0 md:px-4 lg:px-8">
-        <div className="max-w-9xl mx-auto bg-gradient-to-r from-indigo-100/50 to-purple-100/50 p-4 md:p-8 rounded-2xl shadow-lg backdrop-blur-sm">
+        <div className="max-w-9xl mx-auto bg-gradient-to-r from-indigo-100/50 to-purple-100/50 p-4 md:p-8 rounded-2xl"> 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             {/* Image Section */}
+            {/*shadow-lg backdrop-blur-sm */}
             <div className="relative overflow-hidden rounded-xl">
               <img 
                 src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1400&q=80" 
@@ -18,7 +19,7 @@ export default function About() {
             </div>
             {/* Text Section */}
             <div>
-                <h2 className="text-center text-3xl md:text-4xl font-bold px-2 md:pe-10 mb-12 text-indigo-900">
+                <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-bold px-2 md:pe-10 mb-12 text-indigo-900">
                 About the Conference
                 </h2>
               <p className="text-indigo-900 mb-6 text-xl md:text-2xl text-justify leading-relaxed">

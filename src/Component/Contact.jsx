@@ -15,21 +15,37 @@ export default function Contact() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (formData.name && formData.email && formData.message) {
-      setSubmitted(true);
-      setTimeout(() => setSubmitted(false), 3000);
-      setFormData({ name: "", email: "", message: "" });
+      try {
+        const response = await fetch("http://localhost:3000/api/contact", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+        });
+  
+        const result = await response.json();
+        if (response.ok) {
+          setSubmitted(true);
+          setTimeout(() => setSubmitted(false), 3000);
+          setFormData({ name: "", email: "", message: "" });
+        } else {
+          alert(result.error);
+        }
+      } catch (error) {
+        alert("Failed to send message. Try again later.");
+      }
     }
   };
+  
 
   return (
     <>
       <section className="py-25 bg-gradient-to-b from-indigo-100 to-purple-200" id="contact">
       <div className="container mx-auto px-3 md:px-12 max-w-8xl">
         <motion.h2
-          className="text-center text-4xl font-extrabold mb-12 text-indigo-900 tracking-wide"
+          className="text-center text-2xl md:text-3xl lg:text-4xl font-extrabold mb-12 text-indigo-900 tracking-wide"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -54,7 +70,7 @@ export default function Contact() {
               <div key={index} className="flex items-center gap-4 p-4 rounded-lg border border-gray-300 hover:bg-gray-100 transition duration-300">
                 <item.icon className="w-8 h-8 text-indigo-600" />
                 <div>
-                  <h4 className="text-2xl font-semibold text-indigo-900">{item.title}</h4>
+                  <h4 className="text-xl lg:text-2xl font-semibold text-indigo-900">{item.title}</h4>
                   <p className="text-gray-700 text-xl">{item.info}</p>
                 </div>
               </div>

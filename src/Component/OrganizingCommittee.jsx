@@ -9,7 +9,7 @@ const committeeMembers = [
   },
   {
     name: "Dr. Jane Smith",
-    role: "Technical Program Chair",
+    role: "Technical Program",
     university: "Stanford University",
     image: "https://randomuser.me/api/portraits/women/2.jpg",
   },
@@ -31,7 +31,7 @@ export default function OrganizingCommittee() {
   return (
     <section className="py-16 bg-gradient-to-b from-indigo-100 to-purple-200" id="about">
       <div className="container mx-auto px-4 md:px-8">
-        <h2 className="text-center text-3xl md:text-4xl font-bold px-2 md:pe-10 mb-12 text-indigo-900">Organizing Committee</h2>
+        <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-bold px-2 md:pe-10 mb-12 text-indigo-900">Organizing Committee</h2>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {committeeMembers.map((member, index) => (
@@ -41,9 +41,9 @@ export default function OrganizingCommittee() {
                 alt={member.name} 
                 className="w-50 h-50 rounded-full border-4 border-indigo-500"
               />
-              <h3 className="text-xl md:text-2xl font-semibold text-indigo-900 mt-4">{member.name}</h3>
-              <p className="text-xl md:text-2xl text-indigo-700">{member.role}</p>
-              <p className="text-md md:text-xl text-indigo-600 mb-2">{member.university}</p>
+              <h3 className="text-xl md:text-lg xl:text-2xl font-semibold text-indigo-900 mt-4">{member.name}</h3>
+              <p className="text-xl md:text-md xl:text-2xl text-indigo-700">{member.role}</p>
+              <p className="text-xl md:text-md xl:text-xl text-indigo-600 mb-2">{member.university}</p>
             </div>
           ))}
         </div>

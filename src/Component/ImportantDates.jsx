@@ -12,11 +12,11 @@ export default function ImportantDates() {
     return (
         <section className="py-15 pt-20 md:py-25 bg-gradient-to-b from-indigo-50 to-purple-50" id="Author's Desk">
             <div className="container mx-auto">
-                <h2 className="text-center text-3xl md:text-4xl font-bold px-1 md:px-1 md:pe-10 mb-12 text-indigo-900">
+                <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-bold px-1 md:px-1 md:pe-10 mb-12 text-indigo-900">
                     Important Dates & Bank Details
                 </h2>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 px-4 md:px-12 gap-10">
+                <div className="grid grid-cols-1 lg:grid-cols-2 px-4 md:px-12 gap-10">
                     {/* Important Dates */}
                     <div >
                         <div className="relative mb-8 overflow-hidden rounded-xl">

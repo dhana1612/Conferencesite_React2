@@ -11,7 +11,7 @@ export default function Header() {
       {/* Content Container */}
       <div className="container mx-auto px-4 text-center relative z-10">
         <div className="animate-float">
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-purple-200 to-indigo-200">
+          <h1 className="text-3xl lg:text-5xl xl:text-6xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-purple-200 to-indigo-200">
             International Conference on Computing, <br></br>Networking, and Data Science
           </h1>
         </div>

@@ -28,7 +28,7 @@ export default function Speakers() {
     <section className="py-15 pt-20 md:py-25 bg-gradient-to-b from-purple-50 to-indigo-50 relative" id="speakers">
       <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=1920')] opacity-5 bg-cover bg-center"></div>
       <div className="container mx-auto relative z-10">
-        <h2 className="text-center text-3xl md:text-4xl font-bold px-2 md:pe-10 mb-12 text-indigo-900"> Speakers</h2>
+        <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-bold px-2 md:pe-10 mb-12 text-indigo-900"> Speakers</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 px-3 md:px-12">
           {speakers.map((speaker, index) => (
             <div 
@@ -44,9 +44,9 @@ export default function Speakers() {
                 <div className="absolute inset-0 bg-gradient-to-t from-indigo-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
               <div className="p-6 ">
-                <h2 className="text-xl md:text-2xl font-semibold mb-2 text-indigo-900">{speaker.name}</h2>
-                <p className="text-indigo-700 mb-1 text-xl">{speaker.title}</p>
-                <p className="text-purple-600 font-medium text-xl">{speaker.institution}</p>
+                <h2 className="text-xl md:text-2xl font-semibold mb-2 text-indigo-900 text-center">{speaker.name}</h2>
+                <p className="text-indigo-700 mb-1 text-base text-center">{speaker.title}</p>
+                <p className="text-purple-600 font-medium text-base text-center">{speaker.institution}</p>
               </div>
             </div>
           ))}

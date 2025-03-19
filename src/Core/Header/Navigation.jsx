@@ -4,7 +4,7 @@ import { Menu, X } from "lucide-react";
 export default function Navigation() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("home"); // Default to "home"
+  const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,7 +26,6 @@ export default function Navigation() {
           }
         });
 
-        // If no section is found in view, keep "home" active
         if (!found) setActiveSection("home");
       },
       { threshold: 0.6 }
@@ -46,16 +45,20 @@ export default function Navigation() {
       <div className="container mx-auto px-6">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <div className="text-2xl font-extrabold text-white tracking-wide">
-            <a href="/">ICCNDS <span className="text-purple-300">2025</span></a>
-          </div>
+          <a href="/" className="flex items-center space-x-3">
+            <img
+              src="/logo.png" // Change this to your logo's actual path
+              alt="ICCNDS 2025 Logo"
+              className="h-12 w-auto" // Adjust size as needed
+            />
+          </a>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-6">
+          <div className="hidden md:flex space-x-4">
             {["home", "about", "speakers", "Author's Desk", "contact"].map((id) => (
               <a
                 key={id}
-                href={id === "home" ? "/" : `#${id}`} // Redirect home to root path
+                href={id === "home" ? "/" : `#${id}`}
                 className={`text-2xl font-medium transition duration-300 ${
                   activeSection === id ? "text-yellow-400" : "text-white/80 hover:text-white"
                 }`}
@@ -64,7 +67,6 @@ export default function Navigation() {
               </a>
             ))}
           </div>
-
 
           {/* Mobile Menu Button */}
           <button className="md:hidden text-white focus:outline-none" onClick={() => setMenuOpen(!menuOpen)}>
