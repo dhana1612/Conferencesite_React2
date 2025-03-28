@@ -3,7 +3,7 @@ import React from "react";
 const committeeMembers = [
   {
     name: "Dr. Sarah Johnson",
-    role: "General Chair",
+    role: "Publications Chair",
     university: "Harvard University",
     image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
   },
@@ -21,7 +21,7 @@ const committeeMembers = [
   },
   {
     name: "Dr. Michael Chen",
-    role: "Finance Chair",
+    role: "Publications Chair",
     university: "UC Berkeley",
     image: "https://randomuser.me/api/portraits/men/4.jpg",
   },
@@ -41,9 +41,9 @@ export default function OrganizingCommittee() {
                 alt={member.name} 
                 className="w-50 h-50 rounded-full border-4 border-indigo-500"
               />
-              <h3 className="text-xl md:text-lg xl:text-2xl font-semibold text-indigo-900 mt-4">{member.name}</h3>
-              <p className="text-xl md:text-md xl:text-2xl text-indigo-700">{member.role}</p>
-              <p className="text-xl md:text-md xl:text-xl text-indigo-600 mb-2">{member.university}</p>
+              <h3 className="text-3xl md:text-xl xl:text-3xl font-bold text-indigo-900 mt-4">{member.name}</h3>
+              <p className="text-xl md:text-base xl:text-xl text-indigo-700">{member.role}</p>
+              <p className="text-md md:text-sm xl:text-base text-purple-600 mb-2">{member.university}</p>
             </div>
           ))}
         </div>

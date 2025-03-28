@@ -44,9 +44,9 @@ export default function Speakers() {
                 <div className="absolute inset-0 bg-gradient-to-t from-indigo-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
               <div className="p-6 ">
-                <h2 className="text-xl md:text-2xl font-semibold mb-2 text-indigo-900 text-center">{speaker.name}</h2>
-                <p className="text-indigo-700 mb-1 text-base text-center">{speaker.title}</p>
-                <p className="text-purple-600 font-medium text-base text-center">{speaker.institution}</p>
+                <h2 className="text-3xl md:text-xl xl:text-3xl font-semibold mb-2 text-indigo-900 text-center">{speaker.name}</h2>
+                <p className="text-xl md:text-base xl:text-xl text-indigo-700 mb-1 text-center">{speaker.title}</p>
+                <p className="text-purple-600 font-medium text-md md:text-sm xl:text-base text-center">{speaker.institution}</p>
               </div>
             </div>
           ))}

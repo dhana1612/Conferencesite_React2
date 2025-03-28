@@ -47,14 +47,14 @@ export default function Navigation() {
           {/* Logo */}
           <a href="/" className="flex items-center space-x-3">
             <img
-              src="src\assets\Logo1.png"
+              src="\Images\Logo1.png"
               alt="ICCNDS 2025 Logo"
               className="h-23 w-auto" 
             />
           </a>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-4">
+          <div className="hidden md:flex space-x-10">
             {["home", "about", "speakers", "Author's Desk", "contact"].map((id) => (
               <a
                 key={id}
