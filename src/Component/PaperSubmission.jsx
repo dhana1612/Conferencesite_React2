@@ -32,7 +32,7 @@ export default function PaperSubmission() {
     }
 
     try {
-      const response = await axios.post('http://localhost:3000/api/submit-paper', submissionData, {
+      const response = await axios.post('https://iccnds.com/iccnds_paper_Submission.php', submissionData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
       setMessage(response.data.message);
@@ -136,6 +136,7 @@ export default function PaperSubmission() {
               required
               className="w-full px-5 py-3 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none transition bg-white"
             >
+              <option value="">-- Select Category --</option>
               <option value="Academicians">Academicians</option>
               <option value="Researchers">Researchers</option>
               <option value="Students">Students</option>
