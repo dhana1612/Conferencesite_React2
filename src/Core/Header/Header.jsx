@@ -20,11 +20,11 @@ export default function Header() {
         <div className="flex flex-col md:flex-row justify-center items-center gap-8 text-lg">
           <div className="flex items-center gap-3 bg-indigo-900/30 backdrop-blur-sm px-6 py-3 rounded-full transition-transform hover:scale-105">
             <Calendar className="w-5 h-5 text-purple-300" />
-            <span>June 15-17, 2024</span>
+            <span>August 15-17, 2025</span>
           </div>
           <div className="flex items-center gap-3 bg-indigo-900/30 backdrop-blur-sm px-6 py-3 rounded-full transition-transform hover:scale-105">
             <MapPin className="w-5 h-5 text-purple-300" />
-            <span>Chennai, India</span>
+            <span>City, Country</span>
           </div>
         </div>
       </div>

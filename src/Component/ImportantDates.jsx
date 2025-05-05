@@ -2,11 +2,11 @@ import React from 'react';
 
 export default function ImportantDates() {
     const dates = [
-        { event: 'Paper Submission Deadline', date: 'April 15, 2024' },
-        { event: 'Notification of Acceptance', date: 'May 1, 2024' },
-        { event: 'Camera Ready Submission', date: 'May 15, 2024' },
-        { event: 'Early Bird Registration', date: 'May 30, 2024' },
-        { event: 'Conference Dates', date: 'June 15-17, 2024' }
+        { event: 'Paper Submission Deadline', date: 'August 15, 2025' },
+        { event: 'Notification of Acceptance', date: 'August 1, 2025' },
+        { event: 'Camera Ready Submission', date: 'August 15, 2025' },
+        { event: 'Early Bird Registration', date: 'August 30, 2025' },
+        { event: 'Conference Dates', date: 'July 15-17, 2025' }
     ];
 
     return (
@@ -47,25 +47,25 @@ export default function ImportantDates() {
                                 <div className="flex flex-col">
                                     <span className="font-semibold text-gray-700">Account Name</span>
                                     <span className="text-gray-900">
-                                        J.K. Jothi Kalpana, Professor, Dept. of Computer Science & Engineering,
-                                        VRS College of Engineering and Technology, Arasur.
+                                        J.K. Ema, Professor, Dept. of Computer Science & Engineering,
+                                        PDC College of Engineering and Technology, City.
                                     </span>
                                 </div>
                                 <div className="flex flex-col">
                                     <span className="font-semibold text-gray-700">Account Number</span>
-                                    <span className="text-gray-900">045100050302269</span>
+                                    <span className="text-gray-900">0451000502269</span>
                                 </div>
                                 <div className="flex flex-col">
                                     <span className="font-semibold text-gray-700">Branch</span>
-                                    <span className="text-gray-900">Villupuram</span>
+                                    <span className="text-gray-900">City</span>
                                 </div>
                                 <div className="flex flex-col">
                                     <span className="font-semibold text-gray-700">IFSC Code</span>
-                                    <span className="text-gray-900">TMBL0000045</span>
+                                    <span className="text-gray-900">TMBL03000045</span>
                                 </div>
                                 <div className="flex flex-col">
                                     <span className="font-semibold text-gray-700">MICR</span>
-                                    <span className="text-gray-900">605060005</span>
+                                    <span className="text-gray-900">6053060005</span>
                                 </div>
                             </div>
                         </div>
