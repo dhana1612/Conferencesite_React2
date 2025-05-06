@@ -23,7 +23,7 @@ export default function About() {
                 About the Conference
                 </h2>
               <p className="text-indigo-900 mb-6 text-xl md:text-2xl text-justify leading-relaxed">
-                The International Conference on Computing, Networking, and Data Science (ICCNDS) 
+                The International Conference on Computing, Networking, and Data Science 
                 brings together leading researchers, engineers, and scientists to exchange and share 
                 their experiences and research results in all aspects of Computing, Networking, 
                 and Data Science.

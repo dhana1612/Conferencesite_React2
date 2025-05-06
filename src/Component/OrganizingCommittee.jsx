@@ -5,25 +5,25 @@ const committeeMembers = [
     name: "Dr. Sarah Johnson",
     role: "Publications Chair",
     university: "Harvard University",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
+    image: "/images/s7.png",
   },
   {
     name: "Dr. Jane Smith",
     role: "Technical Program",
     university: "Stanford University",
-    image: "https://randomuser.me/api/portraits/women/2.jpg",
+    image: "/images/s3.png",
   },
   {
     name: "Dr. Emily Williams",
     role: "Publications Chair",
     university: "MIT",
-    image: "https://randomuser.me/api/portraits/women/3.jpg",
+    image: "/images/s4.png",
   },
   {
     name: "Dr. Michael Chen",
     role: "Publications Chair",
     university: "UC Berkeley",
-    image: "https://randomuser.me/api/portraits/men/4.jpg",
+    image: "/images/s8.png",
   },
 ];
 

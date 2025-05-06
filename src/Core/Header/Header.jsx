@@ -24,7 +24,7 @@ export default function Header() {
           </div>
           <div className="flex items-center gap-3 bg-indigo-900/30 backdrop-blur-sm px-6 py-3 rounded-full transition-transform hover:scale-105">
             <MapPin className="w-5 h-5 text-purple-300" />
-            <span>City, Country</span>
+            <span>Chennai</span>
           </div>
         </div>
       </div>

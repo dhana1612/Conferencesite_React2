@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-10 md:gap-25">
           {/* Left Section - Conference Info */}
           <div>
-            <h2 className="text-xl lg:text-2xl font-bold tracking-wide">ICCNDS 2024</h2>
+            <h2 className="text-xl lg:text-2xl font-bold tracking-wide">ICCNDS 2025</h2>
             <p className="text-gray-300 mt-3 text-xl lg:text-2xl">
               International Conference on Computing, Networking, and Data Science
             </p>
@@ -45,7 +45,7 @@ export default function Footer() {
           {/* Right Section - Contact & Socials */}
           <div>
             <h3 className="text-xl md:text-2xl font-semibold">Get in Touch</h3>
-            <p className="text-gray-300 mt-2 text-lg md:text-xl">contact@iccnds2024.org</p>
+            <p className="text-gray-300 mt-2 text-lg md:text-xl">iccnds2025@.org</p>
             <p className="text-gray-300 text-lg md:text-xl">+91 123 456 7890</p>
 
             {/* Social Icons */}
@@ -65,7 +65,7 @@ export default function Footer() {
 
         {/* Copyright Section */}
         <div className="border-t border-gray-600 mt-12 pt-6 text-center text-gray-300 text-lg lg:text-xl">
-          © {new Date().getFullYear()} ICCNDS 2024. All Rights Reserved.
+          © {new Date().getFullYear()} ICCNDS. All Rights Reserved.
         </div>
       </div>
     </footer>

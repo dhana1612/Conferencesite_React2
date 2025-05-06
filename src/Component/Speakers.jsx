@@ -7,19 +7,19 @@ export default function Speakers() {
           name: 'Dr. Sarah Johnson',
           title: 'Professor of Computer Science',
           institution: 'MIT',
-          image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop'
+          image: '/images/s6.png'
         },
         {
           name: 'Dr. Michael Chen',
           title: 'Lead AI Researcher',
           institution: 'Google Research',
-          image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop'
+          image: '/images/s1.png'
         },
         {
           name: 'Dr. Emily Williams',
           title: 'Director of Data Science',
           institution: 'Stanford University',
-          image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop'
+          image: '/images/s4.png'
         }
       ];
   return (
@@ -39,7 +39,7 @@ export default function Speakers() {
                 <img 
                   src={speaker.image} 
                   alt={speaker.name} 
-                  className="w-full h-70 object-cover transition-transform duration-300 group-hover:scale-110"
+                  className="w-full object-cover transition-transform duration-300 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-indigo-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>

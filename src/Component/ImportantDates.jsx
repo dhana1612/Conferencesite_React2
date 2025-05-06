@@ -2,11 +2,11 @@ import React from 'react';
 
 export default function ImportantDates() {
     const dates = [
-        { event: 'Paper Submission Deadline', date: 'August 15, 2025' },
-        { event: 'Notification of Acceptance', date: 'August 1, 2025' },
-        { event: 'Camera Ready Submission', date: 'August 15, 2025' },
-        { event: 'Early Bird Registration', date: 'August 30, 2025' },
-        { event: 'Conference Dates', date: 'July 15-17, 2025' }
+        { event: 'Paper Submission Deadline', date: 'July 1, 2025' },
+        { event: 'Notification of Acceptance', date: 'July 8, 2025' },
+        { event: 'Camera Ready Submission', date: 'July 15, 2025' },
+        { event: 'Early Bird Registration', date: 'July 30, 2025' },
+        { event: 'Conference Dates', date: 'August 15-17, 2025' }
     ];
 
     return (
@@ -48,7 +48,7 @@ export default function ImportantDates() {
                                     <span className="font-semibold text-gray-700">Account Name</span>
                                     <span className="text-gray-900">
                                         J.K. Ema, Professor, Dept. of Computer Science & Engineering,
-                                        PDC College of Engineering and Technology, City.
+                                        Abc College of Engineering and Technology, Chennai.
                                     </span>
                                 </div>
                                 <div className="flex flex-col">
@@ -57,7 +57,7 @@ export default function ImportantDates() {
                                 </div>
                                 <div className="flex flex-col">
                                     <span className="font-semibold text-gray-700">Branch</span>
-                                    <span className="text-gray-900">City</span>
+                                    <span className="text-gray-900">Chennai</span>
                                 </div>
                                 <div className="flex flex-col">
                                     <span className="font-semibold text-gray-700">IFSC Code</span>

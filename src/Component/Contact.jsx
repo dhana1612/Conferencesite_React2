@@ -63,9 +63,9 @@ export default function Contact() {
           >
             <h3 className="text-2xl font-semibold mb-4 text-indigo-900">📞 Contact Information</h3>
             {[
-              { icon: MailOpen, title: "Email", info: "contact@iccnds2024.org" },
+              { icon: MailOpen, title: "Email", info: "iccnds2025@.org" },
               { icon: PhoneCall, title: "Phone", info: "+91 123 456 7890" },
-              { icon: MapPin, title: "Location", info: "City, Tamil Nadu, India" },
+              { icon: MapPin, title: "Location", info: "Chennai, Tamil Nadu, India" },
             ].map((item, index) => (
               <div key={index} className="flex items-center gap-4 p-4 rounded-lg border border-gray-300 hover:bg-gray-100 transition duration-300">
                 <item.icon className="w-8 h-8 text-indigo-600" />
