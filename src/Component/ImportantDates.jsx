@@ -10,7 +10,7 @@ export default function ImportantDates() {
     ];
 
     return (
-        <section className="py-15 pt-20 md:py-25 bg-gradient-to-b from-indigo-50 to-purple-50" id="Author's Desk">
+        <section className="py-15 pt-20 md:py-25 bg-gradient-to-b from-indigo-50 to-purple-50" id="important-dates">
             <div className="container mx-auto">
                 <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-bold px-1 md:px-1 md:pe-10 mb-12 text-indigo-900">
                     Important Dates & Bank Details
@@ -47,13 +47,13 @@ export default function ImportantDates() {
                                 <div className="flex flex-col">
                                     <span className="font-semibold text-gray-700">Account Name</span>
                                     <span className="text-gray-900">
-                                        J.K. Ema, Professor, Dept. of Computer Science & Engineering,
-                                        Abc College of Engineering and Technology, Chennai.
+                                    International Conference on Computing,
+                                    Networking, and Data Science, Chennai.
                                     </span>
                                 </div>
                                 <div className="flex flex-col">
                                     <span className="font-semibold text-gray-700">Account Number</span>
-                                    <span className="text-gray-900">0451000502269</span>
+                                    <span className="text-gray-900">123456789</span>
                                 </div>
                                 <div className="flex flex-col">
                                     <span className="font-semibold text-gray-700">Branch</span>

@@ -7,18 +7,22 @@ import ImportantDates from './ImportantDates'
 import PaperSubmission from './PaperSubmission'
 import Contact from './Contact'
 import MapSection from './MapSection'
+import Scope_of_Conference from './Scope_of_Conference'
+import Editoral from './Editoral'
 
 export default function Home() {
   return (
     <>
        <About/>
-       <OrganizingCommittee/>
-       <Speakers/>
+       <Scope_of_Conference/>
        <CallForPapers/>
+       <Speakers/>
+       <OrganizingCommittee/>
+       <Editoral/>
        <ImportantDates/>
        <PaperSubmission/>
        <Contact/>
-       <MapSection/>
+       {/* <MapSection/> */}
     </>
   )
 }

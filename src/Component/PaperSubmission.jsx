@@ -42,9 +42,9 @@ export default function PaperSubmission() {
   };
 
   return (
-    <section className="py-20 bg-[#EDE7F6]" id="Author's Desk">
+    <section className="py-25 bg-[#EDE7F6]" id="paper-submission">
       <div className="container mx-auto px-4 md:px-12">
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 text-center mb-12 tracking-tight">
+        <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-extrabold mb-12 text-indigo-900 tracking-wide">
           Paper Submission
         </h2>
 
@@ -71,9 +71,8 @@ export default function PaperSubmission() {
             {message && <div className="alert alert-info">{message}</div>}
 
           <form onSubmit={handleSubmit} className="space-y-6 text-lg">
-            {/* Paper Title and Author Full Name */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <input 
+
+          <input 
                 type="text" 
                 name="Papertitle" 
                 placeholder="Paper Title" 
@@ -82,6 +81,8 @@ export default function PaperSubmission() {
                 required
                 className="w-full px-5 py-3 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none transition bg-gray-50" 
               />
+            {/* Paper Title and Author Full Name */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
               <input 
                 type="text" 
@@ -92,10 +93,7 @@ export default function PaperSubmission() {
                 required
                 className="w-full px-5 py-3 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none transition bg-gray-50" 
               />
-            </div>
 
-            {/* Mobile Number and Email Address */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <input 
                 type="tel" 
                 name="AuthorMobile" 
@@ -104,7 +102,12 @@ export default function PaperSubmission() {
                 onChange={handleChange} 
                 required
                 className="w-full px-5 py-3 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none transition bg-gray-50" 
-              />
+              />    
+            </div>
+
+            {/* Mobile Number and Email Address */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+
 
               <input 
                 type="email" 
@@ -115,9 +118,8 @@ export default function PaperSubmission() {
                 required
                 className="w-full px-5 py-3 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none transition bg-gray-50" 
               />
-            </div>
 
-            {/* Institution Name */}
+
             <input 
               type="text" 
               name="AuthorInstitution" 
@@ -127,6 +129,10 @@ export default function PaperSubmission() {
               required
               className="w-full px-5 py-3 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none transition bg-gray-50" 
             />
+            </div>
+
+            {/* Institution Name */}
+
 
             {/* Category Dropdown */}
             <select 
