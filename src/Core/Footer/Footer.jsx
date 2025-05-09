@@ -55,7 +55,7 @@ export default function Footer() {
           <div>
             <h3 className="text-xl md:text-2xl font-semibold text-purple-500">Get in Touch</h3>
             <p className="text-gray-300 mt-2 text-lg md:text-lg">Chennai</p>
-            <p className="text-gray-300 mt-2 text-lg md:text-lg">iccnds2025@.org</p>
+            <p className="text-gray-300 mt-2 text-lg md:text-lg">xxx@iccnds.org</p>
             <p className="text-gray-300 text-lg mt-2 md:text-lg">+91 123 456 7890</p>
             
 

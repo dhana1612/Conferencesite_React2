@@ -168,7 +168,7 @@ export default function PaperSubmission() {
             {/* Submit Button */}
             <button 
               type="submit" 
-              className="w-full bg-indigo-600 text-white font-semibold py-4 rounded-lg hover:bg-indigo-500 transition duration-300 text-xl"
+              className="w-full bg-indigo-600 text-white font-semibold py-4 rounded-lg hover:bg-indigo-500 transition duration-300 text-xl cursor-pointer "
             >
               Submit Paper
             </button>

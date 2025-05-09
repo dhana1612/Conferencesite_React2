@@ -76,7 +76,7 @@ export default function Navigation() {
                 <span>About Us</span>
                 <span className="text-sm">▼</span>
               </button>
-              <div className="absolute hidden group-hover:block bg-indigo-900/95 shadow-lg rounded-md mt-2 mb-0 whitespace-nowrap">
+              <div className="absolute hidden group-hover:block bg-indigo-900/95 shadow-lg rounded-md pt-5 pb-3 whitespace-nowrap">
                 <a
                   href="#about"
                   className={`block px-4 py-2 ${
@@ -122,7 +122,7 @@ export default function Navigation() {
                 <span>Author's Desk</span>
                 <span className="text-sm">▼</span>
               </button>
-              <div className="absolute hidden group-hover:block bg-indigo-900/95 shadow-lg rounded-md mt-2 mb-0 whitespace-nowrap">
+              <div className="absolute hidden group-hover:block bg-indigo-900/95 shadow-lg rounded-md pt-5 pb-3 whitespace-nowrap">
                 <a
                   href="#ConferenceTracks"
                   className={`block px-4 py-2 ${
@@ -208,6 +208,7 @@ export default function Navigation() {
                     className={`block py-1 ${
                       activeSection === "about" ? "text-yellow-400" : "text-white/90 hover:text-white"
                     }`}
+                    onClick={() => setMenuOpen(false)}
                   >
                     About the Conference
                   </a>
@@ -216,6 +217,7 @@ export default function Navigation() {
                     className={`block py-1 ${
                       activeSection === "scope" ? "text-yellow-400" : "text-white/90 hover:text-white"
                     }`}
+                    onClick={() => setMenuOpen(false)}
                   >
                     Scope of Conference
                   </a>
@@ -224,6 +226,7 @@ export default function Navigation() {
                     className={`block py-1 ${
                       activeSection === "organizingCommittee" ? "text-yellow-400" : "text-white/90 hover:text-white"
                     }`}
+                    onClick={() => setMenuOpen(false)}
                   >
                     Technical Committee
                   </a>
@@ -232,6 +235,7 @@ export default function Navigation() {
                     className={`block py-1 ${
                       activeSection === "Editorial" ? "text-yellow-400" : "text-white/90 hover:text-white"
                     }`}
+                    onClick={() => setMenuOpen(false)}
                   >
                     Editorial Board
                   </a>
@@ -255,6 +259,7 @@ export default function Navigation() {
                     className={`block py-1 ${
                       activeSection === "ConferenceTracks" ? "text-yellow-400" : "text-white/90 hover:text-white"
                     }`}
+                    onClick={() => setMenuOpen(false)}
                   >
                     Conference Tracks
                   </a>
@@ -263,6 +268,7 @@ export default function Navigation() {
                     className={`block py-1 ${
                       activeSection === "important-dates" ? "text-yellow-400" : "text-white/90 hover:text-white"
                     }`}
+                    onClick={() => setMenuOpen(false)}
                   >
                     Key Dates
                   </a>
@@ -271,6 +277,7 @@ export default function Navigation() {
                     className={`block py-1 ${
                       activeSection === "paper-submission" ? "text-yellow-400" : "text-white/90 hover:text-white"
                     }`}
+                    onClick={() => setMenuOpen(false)}
                   >
                     Paper Submission
                   </a>

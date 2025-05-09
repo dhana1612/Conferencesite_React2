@@ -63,9 +63,9 @@ export default function Contact() {
           >
             <h3 className="text-2xl font-semibold mb-4 text-indigo-900">📞 Contact Information</h3>
             {[
-              { icon: MailOpen, title: "Email", info: "iccnds2025@.org" },
+              { icon: MailOpen, title: "Email", info: "xxx@iccnds.org" },
               { icon: PhoneCall, title: "Phone", info: "+91 123 456 7890" },
-              { icon: MapPin, title: "Location", info: "Chennai, Tamil Nadu, India" },
+              { icon: MapPin, title: "Location", info: "Chennai" },
             ].map((item, index) => (
               <div key={index} className="flex items-center gap-4 p-4 rounded-lg border border-gray-300 hover:bg-gray-100 transition duration-300">
                 <item.icon className="w-8 h-8 text-indigo-600" />
@@ -134,7 +134,7 @@ export default function Contact() {
 
               <motion.button
                 type="submit"
-                className="w-full bg-indigo-600 text-white font-semibold py-3 rounded-lg flex items-center justify-center gap-2 hover:bg-indigo-500 transition duration-300 shadow-lg"
+                className="w-full bg-indigo-600 text-white font-semibold py-3 rounded-lg flex items-center justify-center gap-2 cursor-pointer hover:bg-indigo-500 transition duration-300 shadow-lg"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >

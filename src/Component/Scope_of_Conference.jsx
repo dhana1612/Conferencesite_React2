@@ -23,7 +23,7 @@ function Scope_of_Conference() {
             {/*shadow-lg backdrop-blur-sm */}
             <div className="relative overflow-hidden rounded-xl">
               <img 
-                src="public\images\scope.png" 
+                src="\images\scope.png" 
                 alt="Conference Hall" 
                 className="w-full h-auto object-cover rounded-xl shadow-md transition-transform duration-300 hover:scale-105"
               />

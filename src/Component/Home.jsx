@@ -9,6 +9,7 @@ import Contact from './Contact'
 import MapSection from './MapSection'
 import Scope_of_Conference from './Scope_of_Conference'
 import Editoral from './Editoral'
+import Venue from './venue'
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
        <Editoral/>
        <ImportantDates/>
        <PaperSubmission/>
+       <Venue/>
        <Contact/>
        {/* <MapSection/> */}
     </>
