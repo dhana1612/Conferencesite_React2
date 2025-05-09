@@ -77,7 +77,7 @@ export default function Footer() {
         {/* Copyright Section */}
         <div className="border-t border-gray-600 mt-12 py-6 text-center text-gray-300 text-lg lg:text-xl">
           <a 
-            href="https://www.iccnds2025.org" 
+            href="/" 
             target="" 
             rel="noopener noreferrer" 
             className="hover:text-white transition-all duration-300"
