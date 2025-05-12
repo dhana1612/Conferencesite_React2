@@ -10,7 +10,7 @@ function Scope_of_Conference() {
           
             {/* Text Section */}
             <div>
-                <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-bold px-2 md:pe-10 mb-12 text-indigo-900">
+                <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-bold px-2 pt-10 md:pe-10 mb-12  text-indigo-900">
                 Scope the Conference
                 </h2>
               <p className="text-indigo-900 mb-6 text-xl md:text-2xl text-justify leading-relaxed">

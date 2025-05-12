@@ -32,12 +32,10 @@ const Editoral = () => {
     <section className="py-16 md:py-20 bg-gradient-to-b from-purple-50 to-indigo-50 relative" id="Editorial">
       <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1557264337-e8a93017fe92?auto=format&fit=crop&w=1920')] opacity-5 bg-cover bg-center"></div>
       <div className="container mx-auto relative z-10 px-4">
-        <h2 className="text-center text-2xl sm:text-3xl md:text-4xl font-bold mb-10 text-indigo-900">
+        <h1 className="text-center text-2xl sm:text-3xl md:text-4xl font-bold mb-10 pt-7 text-indigo-900">
           Editorial Board
-        </h2>
-        <p className="text-indigo-800 mb-10 text-justify text-lg sm:text-xl md:text-2xl md:text-center">
-          Committee Members
-        </p>
+        </h1>
+       
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {committeeMembers.map((member, index) => (
             <div

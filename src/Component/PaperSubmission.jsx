@@ -95,7 +95,7 @@ export default function PaperSubmission() {
                 />
 
                 <input 
-                  type="tel" 
+                  type="text" 
                   name="AuthorMobile" 
                   placeholder="Mobile Number" 
                   value={formData.AuthorMobile} 

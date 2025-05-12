@@ -25,7 +25,7 @@ export default function Speakers() {
   return (
     <>
    
-    <section className="py-15 pt-20 md:py-25 bg-gradient-to-b from-purple-50 to-indigo-50 relative" id="KeyInvitees">
+    <section className="py-15 pt-23 md:py-25 bg-gradient-to-b from-purple-50 to-indigo-50 relative" id="KeyInvitees">
       <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=1920')] opacity-5 bg-cover bg-center"></div>
       <div className="container mx-auto relative z-10">
         <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-bold px-2 md:pe-10 mb-12 text-indigo-900"> Key Invitees</h2>
