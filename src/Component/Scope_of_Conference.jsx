@@ -3,7 +3,7 @@ import React from 'react'
 function Scope_of_Conference() {
   return (
     <>
-    <section className="py-15 pt-20 bg-gradient-to-b from-indigo-50 to-purple-50 md:py-25" id="scope">
+    <section className="py-15 pt-10 bg-gradient-to-b from-indigo-50 to-purple-50 md:py-25" id="scope">
       <div className="container mx-auto px-2 ps-0 md:px-4 lg:px-8">
         <div className="max-w-9xl mx-auto  p-4 md:p-8 rounded-2xl"> 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">

@@ -20,22 +20,20 @@ export default function Navigation() {
     const sections = document.querySelectorAll("section");
     const observer = new IntersectionObserver(
       (entries) => {
-        let found = false;
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setActiveSection(entry.target.id);
-            found = true;
           }
         });
-
-        if (!found) setActiveSection("home");
       },
-      { threshold: 0.6 }
+      { threshold: 0.3 } // Adjusted threshold for better detection
     );
 
     sections.forEach((section) => observer.observe(section));
 
-    return () => sections.forEach((section) => observer.unobserve(section));
+    return () => {
+      sections.forEach((section) => observer.unobserve(section));
+    };
   }, []);
 
   return (
@@ -55,8 +53,8 @@ export default function Navigation() {
             />
           </a>
 
-          {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-10">
+          {/* Desktop Menu (visible only on large screens) */}
+          <div className="hidden lg:flex space-x-10">
             <a
               href="/"
               className={`text-2xl font-medium transition duration-300 ${
@@ -167,16 +165,16 @@ export default function Navigation() {
             </a>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button className="md:hidden text-white focus:outline-none" onClick={() => setMenuOpen(!menuOpen)}>
+          {/* Mobile & Tablet Menu Button */}
+          <button className="lg:hidden text-white focus:outline-none" onClick={() => setMenuOpen(!menuOpen)}>
             {menuOpen ? <X size={32} /> : <Menu size={32} />}
           </button>
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile & Tablet Menu */}
       {menuOpen && (
-        <div className="fixed top-0 right-0 h-screen w-64 bg-indigo-900/95 text-white shadow-lg md:hidden">
+        <div className="fixed top-0 right-0 h-screen w-64 bg-indigo-900/95 text-white shadow-lg lg:hidden">
           <button className="absolute top-5 right-5 text-white" onClick={() => setMenuOpen(false)}>
             <X size={32} />
           </button>
@@ -192,7 +190,7 @@ export default function Navigation() {
               Home
             </a>
 
-            {/* About Us in Mobile */}
+            {/* About Us in Mobile & Tablet */}
             <div className="text-lg font-medium text-white/90 hover:text-white">
               <button
                 className="w-full text-left flex items-center space-x-2"
@@ -243,7 +241,7 @@ export default function Navigation() {
               )}
             </div>
 
-            {/* Author's Desk in Mobile */}
+            {/* Author's Desk in Mobile & Tablet */}
             <div className="text-lg font-medium text-white/90 hover:text-white">
               <button
                 className="w-full text-left flex items-center space-x-2"
