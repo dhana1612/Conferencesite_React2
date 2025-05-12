@@ -5,25 +5,25 @@ const committeeMembers = [
     name: "Person1",
     role: "Position",
     Location: "Chennai, India",
-    image: "/images/avator4.png",
+    image: "/images/avator4.webp",
   },
   {
     name: "Person1",
     role: "Position",
     Location: "Chennai, India",
-    image: "/images/avator3.png",
+    image: "/images/avator3.webp",
   },
   {
     name: "Person1",
     role: "Position",
     Location: "Chennai, India",
-    image: "/images/avator2.png",
+    image: "/images/avator2.webp",
   },
   {
     name: "Person1",
     role: "Position",
     Location: "Chennai, India",
-    image: "/images/avator1.png",
+    image: "/images/avator1.webp",
   },
 ];
 

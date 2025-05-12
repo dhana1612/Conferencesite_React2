@@ -7,19 +7,19 @@ export default function Speakers() {
           name: 'Name',
           institution: 'Position',
           Location: 'Chennai, India',
-          image: '/images/avator1.png'
+          image: '/images/avator1.webp'
         },
         {
           name: 'Name',
           institution: 'Position',
           Location: 'Chennai, India',
-          image: '/images/avator2.png'
+          image: '/images/avator2.webp'
         },
         {
           name: 'Name',
           institution: 'Position',
           Location: 'Chennai, India',
-          image: '/images/avator3.png'
+          image: '/images/avator3.webp'
         }
       ];
   return (

@@ -47,7 +47,7 @@ export default function Navigation() {
           {/* Logo */}
           <a href="/" className="flex items-center space-x-3">
             <img
-              src="\images\logo1.png"
+              src="\images\logo1.webp"
               alt="ICCNDS 2025 Logo"
               className="h-23 w-auto"
             />
